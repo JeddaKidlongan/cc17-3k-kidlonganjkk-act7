@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/placeImage"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/camp_john_hay" />
 
     <TextView
         android:id="@+id/placeDetails"

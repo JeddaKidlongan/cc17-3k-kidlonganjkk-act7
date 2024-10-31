@@ -19,7 +19,7 @@
     <fragment
         android:id="@+id/categoryFragment"
         android:name="com.example.explorebaguiocity.CategoryFragment"
-        android:label="Recommendation"
+        android:label="Recommendations"
         tools:layout="@layout/fragment_category">
 
         <argument

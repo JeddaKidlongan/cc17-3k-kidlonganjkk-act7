@@ -10,41 +10,48 @@ class MainViewModel : ViewModel() {
 
     private val placeData = mapOf(
         "Kid-Friendly Places" to listOf(
-            Place("Baguio Botanical Garden", R.drawable.ic_launcher_foreground, "Kid-Friendly Places", "Great for kids to explore nature, with walking trails, sculptures, and native huts.", "Location: Leonard Wood Road, Baguio City"),
-            Place("Burnham Park", R.drawable.ic_launcher_foreground, "Kid-Friendly Places", "Perfect for family outings, featuring a lake for boat rides, bike rentals, and playgrounds.", "Location: Jose Abad Santos Drive, Baguio City"),
-            Place("Children's Park", R.drawable.ic_launcher_foreground, "Kid-Friendly Places", "Fun playground and picnic area, with swings, slides, and spacious grounds.", "Location: Burnham Park, Baguio City"),
-            Place("Camp John Hay", R.drawable.ic_launcher_foreground, "Kid-Friendly Places", "A nature and recreation site with picnic spots, hiking trails, and scenic views.", "Location: Loakan Road, Baguio City"),
-            Place("Lion's Head", R.drawable.ic_launcher_foreground, "Kid-Friendly Places", "Popular for family photos, featuring a large lion sculpture on a scenic mountain road.", "Location: Kennon Road, Baguio City")
+            Place("Baguio Botanical Garden", R.drawable.botanical_garden, "Kid-Friendly Places", "Great for kids to explore nature, with walking trails, sculptures, and native huts.", "Location: Leonard Wood Road, Baguio City"),
+            Place("Burnham Park", R.drawable.burnham_park, "Kid-Friendly Places", "Perfect for family outings, featuring a lake for boat rides, bike rentals, and playgrounds.", "Location: Jose Abad Santos Drive, Baguio City"),
+            Place("Children's Park", R.drawable.children_park, "Kid-Friendly Places", "Fun playground and picnic area, with swings, slides, and spacious grounds.", "Location: Burnham Park, Baguio City"),
+            Place("Camp John Hay", R.drawable.camp_john_hay, "Kid-Friendly Places", "A nature and recreation site with picnic spots, hiking trails, and scenic views.", "Location: Loakan Road, Baguio City"),
+            Place("Lion's Head", R.drawable.lion_head, "Kid-Friendly Places", "Popular for family photos, featuring a large lion sculpture on a scenic mountain road.", "Location: Kennon Road, Baguio City")
         ),
 
         "Parks" to listOf(
-            Place("Burnham Park", R.drawable.ic_launcher_foreground, "Parks", "Ideal for relaxation and leisure activities.", "rtgr"),
-            Place("Wright Park", R.drawable.ic_launcher_foreground, "Parks", "Great for horseback riding.", "ertgre"),
-            Place("Mines View Park", R.drawable.ic_launcher_foreground, "Parks", "Offers breathtaking mountain views.", "Popular for scenic overlooks."),
-            Place("Botanical Garden", R.drawable.ic_launcher_foreground, "Parks", "Lush garden with walking paths.", "Features local flora and fauna."),
-            Place("Eco Park", R.drawable.ic_launcher_foreground, "Parks", "Focus on sustainable recreation.", "Great for eco-friendly activities.")
+            Place("Wright Park", R.drawable.ic_launcher_foreground, "Parks", "Great for horseback riding and scenic views of pine trees.", "Location: Gibraltar Road, Baguio City"),
+            Place("Mines View Park", R.drawable.ic_launcher_foreground, "Parks", "Offers breathtaking mountain views and souvenir shopping.", "Location: Outlook Drive, Baguio City"),
+            Place("Sunshine Park", R.drawable.ic_launcher_foreground, "Parks", "A relaxing spot with beautiful gardens and vibrant flowers.", "Location: Upper Session Road, Baguio City"),
+            Place("Panagbenga Park", R.drawable.ic_launcher_foreground, "Parks", "Known for its peaceful ambiance and colorful flowers.", "Location: Camp John Hay entrance, Baguio City"),
+            Place("Eco Park", R.drawable.ic_launcher_foreground, "Parks", "Focus on sustainable recreation with nature trails and picnic areas.", "Location: Santo Tomas, Baguio City")
         ),
+
         "Restaurants" to listOf(
-            Place("Good Taste", R.drawable.ic_launcher_foreground, "Restaurants", "Known for affordable prices and good food.", "tryt"),
-            Place("Oh My Gulay", R.drawable.ic_launcher_foreground, "Restaurants", "Famous for its creative dishes.", "rhytr"),
-            Place("Cafe by the Ruins", R.drawable.ic_launcher_foreground, "Restaurants", "Offers local-inspired cuisine.", "Unique cultural experience."),
-            Place("Hill Station", R.drawable.ic_launcher_foreground, "Restaurants", "Renowned for its cozy ambiance.", "International and local dishes."),
-            Place("Arca's Yard", R.drawable.ic_launcher_foreground, "Restaurants", "Known for its mountain views.", "Combines art gallery and cafe.")
+            Place("Good Taste", R.drawable.ic_launcher_foreground, "Restaurants", "Known for affordable prices and generous portions of Filipino and Chinese dishes.", "Location: Carino St, Baguio City, Benguet"),
+            Place("Oh My Gulay", R.drawable.ic_launcher_foreground, "Restaurants", "Famous for its vegetarian and artfully presented dishes in a unique, bohemian atmosphere.", "Location: 5th Floor, La Azotea Building, Session Road, Baguio City"),
+            Place("Cafe by the Ruins", R.drawable.ic_launcher_foreground, "Restaurants", "Offers locally inspired cuisine with fresh ingredients in a rustic, cultural ambiance.", "Location: 25 Shuntug Rd, Baguio City, Benguet"),
+            Place("Lemon and Olives", R.drawable.ic_launcher_foreground, "Restaurants", "Popular for authentic Greek cuisine with a scenic outdoor seating area overlooking Baguio's natural beauty.", "Location: 26 Outlook Drive, Baguio City, Benguet"),
+            Place("Forest House Bistro & Cafe", R.drawable.ic_launcher_foreground, "Restaurants", "A cozy spot with mountain views, offering Filipino and international comfort food in a warm, rustic setting.", "Location: 16 Loakan Rd, Baguio City, Benguet")
         ),
+
+
         "Shopping Centers" to listOf(
-            Place("SM City Baguio", R.drawable.ic_launcher_foreground, "Shopping Centers", "SM Baguio is a vibrant shopping destination with stores, dining, and entertainment in a cool, open-air setting.", "Located on Luneta Hill, Upper Session Road."),
-            Place("Porta Vaga Mall", R.drawable.ic_launcher_foreground, "Shopping Centers", "Porta Vaga Mall in Baguio offers themed buildings, a department store, food lane, and boutiques, with a focus on social and environmental responsibility.", "Located at Upper Session Road."),
-            Place("Baguio Center Mall", R.drawable.ic_launcher_foreground, "Shopping Centers", "Baguio Center Mall is a bustling shopping spot with diverse stores, dining, and entertainment, popular with locals and tourists. ", "Located Magsaysay Ave, Baguio City."),
-            Place("Abanao Square", R.drawable.ic_launcher_foreground, "Shopping Centers", " Abanao Square is a smaller mall known for its affordable goods and services, including apparel, personal care, electronics, banks, pawn shops, and a fitness gym. It's conveniently located near major streets and landmarks.", "Located in Abanao corner Zandu Eta Street."),
-            Place("Mabini Shopping Center", R.drawable.ic_launcher_foreground, "Shopping Centers", "Mabini Shopping Center in Baguio offers diverse shops, dining, and services, showcasing local culture in a vibrant atmosphere. ", "Located in Mabini St.")
+            Place("SM City Baguio", R.drawable.ic_launcher_foreground, "Shopping Centers", "SM Baguio is a vibrant shopping destination with stores, dining, and entertainment in a cool, open-air setting.", "Location: Luneta Hill, Upper Session Road, Baguio City, Benguet."),
+            Place("Porta Vaga Mall", R.drawable.ic_launcher_foreground, "Shopping Centers", "Porta Vaga Mall in Baguio offers themed buildings, a department store, food lane, and boutiques, focusing on social and environmental responsibility.", "Location: Upper Session Road, Baguio City, Benguet."),
+            Place("Baguio Center Mall", R.drawable.ic_launcher_foreground, "Shopping Centers", "Baguio Center Mall is a bustling shopping spot with diverse stores, dining, and entertainment, popular with locals and tourists.", "Location: Magsaysay Ave, Baguio City, Benguet."),
+            Place("Abanao Square", R.drawable.ic_launcher_foreground, "Shopping Centers", "Abanao Square is a smaller mall known for its affordable goods and services, including apparel, personal care, electronics, banks, pawn shops, and a fitness gym. It's conveniently located near major streets and landmarks.", "Location: Abanao corner Zandu Eta Street, Baguio City, Benguet."),
+            Place("Maharlika Center", R.drawable.ic_launcher_foreground, "Shopping Centers", "Maharlika is known for its local handicrafts, fresh produce, and souvenir items, providing a vibrant market atmosphere where visitors can experience the local culture.", "Location: Maharlika, Baguio City, Benguet.")
         ),
+
+
         "Club and Bar" to listOf(
-            Place("The Rabbit Hole", R.drawable.ic_launcher_foreground, "Club and Bar", "Popular for its vibrant atmosphere and unique cocktails.", "Located on Leonard Wood Road."),
-            Place("Rumours Bar", R.drawable.ic_launcher_foreground, "Club and Bar", "Known for live music, cozy ambiance, and karaoke nights.", "Located at Upper Session Road."),
-            Place("Spade Super Club", R.drawable.ic_launcher_foreground, "Club and Bar", "Lively bar with cocktails and events, ideal for socializing.", "Located on Military Cutoff Road."),
-            Place("Baguio Craft Brewery", R.drawable.ic_launcher_foreground, "Club and Bar", "Offers a variety of craft beers and a rooftop view.", "Located along Marcos Highway."),
-            Place("The Camp", R.drawable.ic_launcher_foreground, "Club and Bar", "Outdoor bar with a cozy vibe, ideal for gatherings.", "Located on Loakan Road.")
+            Place("Spade Super Club", R.drawable.ic_launcher_foreground, "Club and Bar", "Lively bar offering cocktails, a dance floor, and regular events, ideal for socializing.", "Location: 9 Military Cutoff Rd, Baguio City, Benguet."),
+            Place("The Camp", R.drawable.ic_launcher_foreground, "Club and Bar", "An outdoor bar with a cozy vibe, ideal for gatherings and enjoying the fresh air.", "Location: 7 Loakan Rd, Baguio City, Benguet."),
+            Place("The Ampersand", R.drawable.ic_launcher_foreground, "Club and Bar", "A stylish bar offering craft cocktails and an extensive wine selection, perfect for a night out.", "Location: 46 Upper Session Rd, Baguio City, Benguet."),
+            Place("Hotline Bar", R.drawable.ic_launcher_foreground, "Club and Bar", "A popular spot for locals and tourists, offering a relaxed vibe with great drinks and a friendly atmosphere.", "Location: 4, Magsaysay Ave, Baguio City, Benguet."),
+            Place("Publiquo Bar", R.drawable.ic_launcher_foreground, "Club and Bar", "Known for its vibrant atmosphere and affordable drinks, ideal for casual hangouts.", "Location: 22 S. B. G. Avenue, Baguio City, Benguet.")
         )
+
+
 
     )
 
