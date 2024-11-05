@@ -10,7 +10,7 @@ import com.example.explorebaguiocity.databinding.FragmentDetailsBinding
 
 class DetailsFragment : Fragment() {
     private lateinit var binding: FragmentDetailsBinding
-    private val args: DetailsFragmentArgs by navArgs() // Assuming you're passing the Place object through args
+    private val args: DetailsFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,9 +22,9 @@ class DetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         // Accessing the Place object from the arguments
-        val place = args.place // Ensure 'place' is of type Place
-        binding.placeImage.setImageResource(place.imageResource) // Updated to use imageResource
-        binding.placeDetails.text = place.details // Accessing details
+        val place = args.place
+        binding.placeImage.setImageResource(place.imageResource)
+        binding.placeDetails.text = place.details
         binding.placeLocation.text = place.location
     }
 }

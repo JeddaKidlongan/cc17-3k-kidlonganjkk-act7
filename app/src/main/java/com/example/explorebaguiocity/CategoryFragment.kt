@@ -14,7 +14,7 @@ import com.example.explorebaguiocity.databinding.FragmentCategoryBinding
 class CategoryFragment : Fragment() {
     private lateinit var binding: FragmentCategoryBinding
     private val viewModel: MainViewModel by viewModels()
-    private val args: CategoryFragmentArgs by navArgs() // Using Safe Args for navigation arguments
+    private val args: CategoryFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,7 +34,7 @@ class CategoryFragment : Fragment() {
         viewModel.places.observe(viewLifecycleOwner) { places ->
             binding.placesRecyclerView.adapter = PlaceAdapter(places) { place ->
                 val action = CategoryFragmentDirections
-                    .actionCategoryFragmentToDetailsFragment(place) // `place` is now passed correctly
+                    .actionCategoryFragmentToDetailsFragment(place)
                 findNavController().navigate(action)
             }
 
@@ -43,6 +43,6 @@ class CategoryFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding.placesRecyclerView.adapter = null // Prevents memory leaks
+        binding.placesRecyclerView.adapter = null
     }
 }

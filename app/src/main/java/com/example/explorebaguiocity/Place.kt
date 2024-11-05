@@ -1,7 +1,5 @@
 package com.example.explorebaguiocity
 
-// Place.kt
-
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 

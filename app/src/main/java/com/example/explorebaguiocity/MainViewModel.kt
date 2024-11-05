@@ -57,7 +57,6 @@ class MainViewModel : ViewModel() {
 
 
     fun loadPlaces(category: String) {
-        // Load places based on the provided category
         _places.value = placeData[category] ?: emptyList()
     }
 }

@@ -27,7 +27,7 @@ class PlaceAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(place: Place, onClick: (Place) -> Unit) {
-            binding.placeName.text = place.name // Ensuring this ID matches the TextView in item_place.xml
+            binding.placeName.text = place.name
             binding.root.setOnClickListener { onClick(place) }
         }
     }
